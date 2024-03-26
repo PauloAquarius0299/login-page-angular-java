@@ -1,0 +1,25 @@
+<main>
+  <section class="form-section">
+    <img src="/assets/svg/logo.svg" alt="logo">
+    <h2>{{ title}}</h2>
+    <ng-content></ng-content>
+    <div class="btn-wrapper">
+      <button
+      class="btn-primary"
+      (click)="submit()"
+      [disabled]="disablePrimaryBtn"
+      >
+      {{primaryBtnText}}</button>
+      <div class="divider">
+        <div>
+          <span>or</span>
+        </div>
+      </div>
+      <button class="btn-secondary" (click)="navigate()">{{secondaryBtnText}}</button>
+    </div>
+  </section>
+  <section class="main-section">
+    <h1>Your Should, MoveIt!</h1>
+    <img src="/assets/bg-imagem.png" width="500" height="400" alt="bg imagem">
+  </section>
+</main>
